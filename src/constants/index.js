@@ -187,7 +187,27 @@ import {
       image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
   ];
-  
+  const edu = [
+    {
+      
+      name: "NIT AP",
+      date: "2006-2019",
+      des:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    },
+    {
+      name: "IIT Hyd",
+      date: "2019-2021",
+      des:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    },
+    {
+      name: "NIT Trichy",
+      des:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      date: "2021-2025",
+      
+    },
+  ];
+
+
   const projects = [
     {
       name: "Car Rent",
@@ -254,4 +274,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials,projects };
+  export { services, technologies, experiences, testimonials,projects,edu };

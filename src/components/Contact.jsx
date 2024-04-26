@@ -26,9 +26,8 @@ const Contact = () => {
           <div className="flex flex-col gap-1">
             <p className="text-secondary ">{"{"}</p>
             {Object.keys(user).map((key) => (
-              <p className="ml-5 ">
-                <span className="text-secondary ">{key}:</span>
-
+              <p className="ml-5 mb-2 ">
+                <span className="text-secondary ">{key}: </span>
                 <span className="text-secondary  ">{user[key]}</span>
               </p>
             ))}

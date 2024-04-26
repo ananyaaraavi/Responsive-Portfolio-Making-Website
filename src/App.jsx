@@ -1,6 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import {
   About,
+  Education,
   Contact,
   Experience,
   Hero,
@@ -10,6 +11,7 @@ import {
   Footer,
   // StarsCanvas,
 } from "./components";
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -19,6 +21,7 @@ const App = () => {
           <Hero />
         </div>
         <About />
+        <Education />
         <Experience />
         <Tech />
         <Works />
