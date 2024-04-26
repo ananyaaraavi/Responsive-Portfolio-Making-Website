@@ -7,7 +7,8 @@ import {
   Navbar,
   Tech,
   Works,
-  StarsCanvas,
+  Footer,
+  // StarsCanvas,
 } from "./components";
 const App = () => {
   return (
@@ -21,10 +22,8 @@ const App = () => {
         <Experience />
         <Tech />
         <Works />
-        <div className="relative z-0">
-          <Contact />
-          <StarsCanvas />
-        </div>
+        <Contact />
+        <Footer />
       </div>
     </BrowserRouter>
   );

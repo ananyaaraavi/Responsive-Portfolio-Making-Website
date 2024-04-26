@@ -11,10 +11,10 @@ import { textVariant } from "../utils/motion";
 
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
-    contentStyle={{ background: "#1d1836", color: "#fff" }}
-    contentArrowStyle={{ borderRight: "7px solid #232631" }}
+    contentStyle={{ background: "#1d1836", color: "text-secondary" }}
+    contentArrowStyle={{ borderRight: "7px solid #1d1836" }}
     date={experience.date}
-    iconStyle={{ background: experience.iconBg }}
+    iconStyle={{ background: "#060816", color: "#aaa6c3" }}
   >
     <div>
       <h3 className="text-secondary text-[24px] font-bold">
@@ -31,7 +31,7 @@ const ExperienceCard = ({ experience }) => (
       {experience.points.map((point, index) => (
         <li
           key={`experience-point-${index}`}
-          className="text-white-100 text-[14px] pl-1 tracking-wider "
+          className="text-#915eff-100 text-[14px] pl-1 tracking-wider "
         >
           {point}
         </li>
@@ -47,6 +47,19 @@ const Experience = () => {
         <p className={styles.sectionSubText}>My Work So Far</p>
         <h2 className={styles.sectionHeadText}>Work Experience</h2>
       </motion.div>
+      <motion.p variants={textVariant()}>
+        <div className=" absolute top-0 right-20 mt-10 mr-10 ">
+          <div className="h-[35vh]">
+            <dotlottie-player
+              src="https://lottie.host/c9992358-94ec-43d2-8cbf-727b9bdd2c1b/lBvNaLy5rQ.json"
+              background="transparent"
+              speed="1"
+              loop
+              autoplay
+            ></dotlottie-player>
+          </div>
+        </div>
+      </motion.p>
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
           {experiences.map((experience, index) => (
